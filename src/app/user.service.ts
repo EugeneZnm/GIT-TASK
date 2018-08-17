@@ -15,4 +15,15 @@ user: User;
     this.user = new User('', '', '', '', '', 0);
    }
 
+   userReturn() {
+    interface ApiResponse {
+      name: string;
+      company: string;
+      bio: string;
+      email: string;
+      public_repos: number;
+    }
+   
+
+   }
 }
