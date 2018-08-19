@@ -9,5 +9,23 @@ export class SearchService {
 
   search: Search;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.search = new Search('');
+  }
+
+  searchReturn() {
+
+    interface ApiResponse {
+      results: string;
+    }
+    const promise = new Promise ((resolve) =>
+      this.http.get<ApiResponse>('').toPromise().then(response => {
+        this.search.results = response.results;
+        resolve();
+      })
+    );
+    return promise;
+  }
 }
+
+
