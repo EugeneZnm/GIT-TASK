@@ -1,3 +1,3 @@
 export class Search {
-constructor (public results: string) { }
+constructor (public name: string, public full_name: string, public url: string, ) { }
 }
