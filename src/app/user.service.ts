@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 // import htttp module
 import {HttpClient} from '@angular/common/http';
 import { User } from './user';
+import { environment } from '../environments/environment';
 
 
 @Injectable({
@@ -24,7 +25,7 @@ user: User;
       public_repos: number;
     }
     const promise = new Promise((resolve) => {
-      this.http.get<ApiResponse>('https://api.github.com/users/eugeneznm?access_token=aad4aef7cf6f937d79bc8dbef820c8eb33aae6ae')
+      this.http.get<ApiResponse>(environment.apiUrl)
       .toPromise().then(response => {
         this.user.name = response.name;
         this.user.avatar_url = response.avatar_url;
