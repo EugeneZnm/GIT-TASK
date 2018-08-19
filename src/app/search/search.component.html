@@ -2,18 +2,23 @@
 <app-user></app-user>
 <br>
 <div class="container">
-    <div class="card row">
-        <div class="col-md-12 card col1">
-            <p class="username">UserName: <span>{{user.name}}</span></p>
+    <div class="row">
+        <div class="card col11">
+            <div class="col-md-6 col1">
+                <p class="username">UserName: <span>{{user.name}}</span></p>
+            </div>
+            <div class="col-md-6">
+
+            </div>
         </div>
-        <div class="col-md-12 card col2">
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6 card col2">
             <p class="followers">Followers:<span>{{user.followers}}</span></p>
         </div>
-        <div class="col-md-12 col3">
+        <div class="col-md-6 card col3">
             <p class="following">Following:<span>{{user.following}}</span></p>
-
         </div>
-
     </div>
-
 </div>

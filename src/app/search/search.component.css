@@ -1,0 +1,38 @@
+.followers {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.following {
+    margin-top: 2em;
+}
+
+.col1 {
+    width: 300px;
+    margin-top: 2em;
+    margin-left: 8em;
+    text-align: center;
+}
+
+.col11 {
+    width: 500px;
+}
+
+.username {
+    text-align: center;
+    font-weight: 600;
+}
+
+.col2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.col3 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.cols {
+    column-count: 2;
+}
