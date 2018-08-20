@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import {UserService} from './user.service';
-import {RouterModule} from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
@@ -10,6 +10,12 @@ import { UserComponent } from './user/user.component';
 import { SearchService } from './search.service';
 import { HighlightDirective } from './highlight.directive';
 import { ResultsComponent } from './results/results.component';
+import { ERRORComponent } from './error/error.component';
+
+// Defining Routes
+const routes: Routes = [
+ {path: 'search', component: ResultsComponent},
+];
 
 @NgModule({
   declarations: [
@@ -17,12 +23,13 @@ import { ResultsComponent } from './results/results.component';
     SearchComponent,
     UserComponent,
     HighlightDirective,
-    ResultsComponent
+    ResultsComponent,
+    ERRORComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule
+    RouterModule.forRoot(routes)
   ],
   providers: [UserService, SearchService],
   bootstrap: [AppComponent]

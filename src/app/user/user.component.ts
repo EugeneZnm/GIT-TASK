@@ -19,7 +19,7 @@ export class UserComponent implements OnInit {
 
   display(searchfor) {
     this.users.displayUser(searchfor);
-    console.log();
+
   }
 
   ngOnInit() {

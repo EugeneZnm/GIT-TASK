@@ -6,7 +6,8 @@
         </a>
         <form class="form-inline">
             <input class="form-control mr-sm-2" #searchfor type="search" placeholder="Search" aria-label="Search">
-            <input class="btn btn-success" (click)="display(searchfor)" type="button" value="SEARCH">
+            <a routerLink='/goals' routerLinkActive='active'>SEARCH<input class="btn btn-success" (click)="display(searchfor)" type="button" value="SEARCH"></a>
         </form>
     </nav>
 </div>
+<router-outlet></router-outlet>
