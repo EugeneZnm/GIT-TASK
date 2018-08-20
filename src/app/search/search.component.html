@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-6 card col1">
             <img src="{{user.avatar_url}}">
-            <p class="username">UserName: <span>{{user.name|uppercase}}</span></p>
+            <p class="username">UserName: <span appHighlight>{{user.name}}</span></p>
         </div>
         <div class="col-md-6">
 
@@ -14,11 +14,10 @@
     <br>
     <div class="row">
         <div class="col-md-6 card col2">
-            <p class="followers">Followers:<span>{{user.followers}}</span></p>
+            <p class="followers">Followers:<span appHighlight>{{user.followers}}</span></p>
         </div>
         <div class="col-md-6 card col3">
-            <p class="following">Following:<span>{{user.following}}</span></p>
+            <p class="following">Following:<span appHighlight>{{user.following}}</span></p>
         </div>
     </div>
-    <!-- <p>{{search.name}}</p> -->
 </div>
