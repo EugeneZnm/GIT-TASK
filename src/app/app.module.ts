@@ -14,7 +14,9 @@ import { ERRORComponent } from './error/error.component';
 
 // Defining Routes
 const routes: Routes = [
- {path: 'search', component: ResultsComponent},
+ {path: 'search', component: SearchComponent},
+ {path: '', redirectTo: '/search', pathMatch: 'full'},
+ {path: '**', component: ERRORComponent}
 ];
 
 @NgModule({
