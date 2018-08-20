@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { UserComponent } from './user/user.component';
 import { SearchService } from './search.service';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    UserComponent
+    UserComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

@@ -4,10 +4,11 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 card col1">
-            <p class="username">UserName: <span>{{user.name}}</span></p>
+            <img src="{{user.avatar_url}}">
+            <p class="username">UserName: <span>{{user.name|uppercase}}</span></p>
         </div>
         <div class="col-md-6">
-            <!-- <span>{{user.avatar_url}}</span> -->
+
         </div>
     </div>
     <br>
