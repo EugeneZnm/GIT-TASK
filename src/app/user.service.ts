@@ -24,7 +24,7 @@ user: User;
       following: number;
      }
      const promise = new Promise((resolve) => {
-      this.http.get<ApiResponse>(environment.searchUrl + searchfor)
+      this.http.get<ApiResponse>('https://api.github.com/search/users?q=' + searchfor)
       .toPromise().then(response => {
         this.user.name = response.name;
         this.user.avatar_url = response.avatar_url;
@@ -45,7 +45,7 @@ user: User;
       public_repos: number;
     }
     const promise = new Promise((resolve) => {
-      this.http.get<ApiResponse>(environment.apiUrl)
+      this.http.get<ApiResponse>('https://api.github.com/users/eugeneznm?access_token=aad4aef7cf6f937d79bc8dbef820c8eb33aae6ae')
       .toPromise().then(response => {
         this.user.name = response.name;
         this.user.avatar_url = response.avatar_url;
