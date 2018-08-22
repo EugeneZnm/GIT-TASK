@@ -11,6 +11,10 @@
     width: 300px;
     margin-top: 2em;
     text-align: center;
+    background-color: aquamarine;
+    position: relative;
+    left: 30%;
+    font-size: 20px;
 }
 
 .col11 {
@@ -25,14 +29,26 @@
 
 .col2 {
     text-align: center;
+    font-size: 20px;
     font-weight: 600;
+    width: 200px;
 }
 
 .col3 {
     text-align: center;
     font-weight: 600;
+    font-size: 20px;
 }
 
 .cols {
     column-count: 2;
+}
+
+#first {
+    background-color: lightblue;
+    height: 700px;
+}
+
+.supreme {
+    background-color: coral;
 }

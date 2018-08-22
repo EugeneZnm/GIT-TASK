@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <app-user></app-user>
 <br>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 card col1">
-            <img src="{{user.avatar_url}}">
-            <p class="username">UserName: <span appHighlight>{{user.name}}</span></p>
-        </div>
-        <div class="col-md-6">
+<div class="supreme">
+    <div class="container" id="first">
+        <div class="row">
+            <div class="col-md-6 card col1">
+                <img src="{{user.avatar_url}}">
+                <p class="username">UserName: <span appHighlight>{{user.name}}</span></p>
+            </div>
+            <div class="col-md-6">
 
+            </div>
         </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="col-md-6 card col2">
-            <p class="followers">Followers:<span appHighlight>{{user.followers}}</span></p>
-        </div>
-        <div class="col-md-6 card col3">
-            <p class="following">Following:<span appHighlight>{{user.following}}</span></p>
+        <br>
+        <div class="row">
+            <div class="col-md-6 card col2">
+                <p class="followers">Followers:<span appHighlight>{{user.followers}}</span></p>
+            </div>
+            <div class="col-md-6 card col3">
+                <p class="following">Following:<span appHighlight>{{user.following}}</span></p>
+            </div>
         </div>
     </div>
 </div>
